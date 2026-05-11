@@ -39,7 +39,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 @SuppressLint("UnsafeExperimentalUsageError")
 public class MainActivity extends AppCompatActivity implements OnDebounceListener {
-
+    //
     public static final String SORT_TAG = "SORT_TAG";
     public static final String FILTER_TAG = "FILTER_TAG";
     final Debouncer debouncer = new Debouncer(this);
