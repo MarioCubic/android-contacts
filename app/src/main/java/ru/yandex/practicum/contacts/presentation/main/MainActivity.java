@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity implements OnDebounceListene
 
     public static final String SORT_TAG = "SORT_TAG";
     public static final String FILTER_TAG = "FILTER_TAG";
-    final Debouncer debouncer = new Debouncer((Debouncer.OnValueUpdateListener) this);
+    final Debouncer debouncer = new Debouncer(this);
 
     private ActivityMainBinding binding;
     private MainViewModel viewModel;
@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity implements OnDebounceListene
     }
 
     public void bindSearch() {
-        final Debouncer debouncer = new Debouncer((Debouncer.OnValueUpdateListener) this);
+        final Debouncer debouncer = new Debouncer(this);
         binding.searchLayout.searchText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
